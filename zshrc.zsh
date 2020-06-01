@@ -21,7 +21,6 @@ export PYTHON_CONFIGURE_OPTS="--enable-shared"
 # curl -L git.io/antigen > ~/.antigen.zsh
 source ~/.antigen.zsh
 
-antigen use oh-my-zsh
 antigen bundle git
 antigen bundle pip
 antigen bundle command-not-found
@@ -30,8 +29,12 @@ antigen bundle Tarrasch/zsh-autoenv
 # https://github.com/agnoster/agnoster-zsh-theme
 # git clone https://github.com/powerline/fonts.git --depth=1 && fonts/install.sh && rm -rf fonts
 # sudo apt-get install fonts-powerline
-antigen theme agnoster
 
+# antigen theme agnoster
+
+antigen theme geoffgarside
+
+antigen use oh-my-zsh
 antigen apply
 
 
